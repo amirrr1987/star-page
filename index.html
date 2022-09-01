@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="./assets/styles/index.css">
 </head>
 
-<body>
-    <nav class="bg-[#212121] text-[#f2d757] text-xl py-5 fixed inset-x-0 bottom-0">
-        <ul class="flex justify-between container mx-auto">
+<body class="overflow-hidden">
+
+
+
+    <nav class="bg-[#212121] text-[#f2d757] text-xl py-5 fixed inset-x-0 bottom-0 z-50">
+        <ul class="flex justify-between container mx-auto px-16">
             <li>
                 <a href="" class="">
                     <span class="iconify" data-icon="icon-park-outline:home"></span>
@@ -31,18 +34,36 @@
             </li>
             <li>
                 <a href="">
-                    <span class="iconify" data-icon="icon-park-outline:mail"></span>
+                    <span class="iconify" data-icon="icon-park-outline:file-code"></span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <span class="iconify" data-icon="icon-park-outline:home"></span>
+                    <span class="iconify" data-icon="icon-park-outline:mail"></span>
                 </a>
             </li>
+
         </ul>
     </nav>
 
-    <div class="twinkling"></div>
+
+    <main>
+        <div class="grid justify-center items-center relative">
+            <div class="grid justify-center items-center w-screen h-screen relative z-[-5]">
+                <img class="logo" src="img/logo.svg" title="" alt="">
+                <canvas id="canvasOne" width="500" height="520"
+                    class="absolute inset-x-0 mx-auto w-[60vw] rounded-full"></canvas>
+            </div>
+        </div>
+
+        <div class="twinkling absolute inset-0 w-full h-full block z-[-10]"></div>
+    </main>
+
+
+    <script type='text/javascript' src='./assets/scripts/jquery.js'></script>
+    <script type='text/javascript' src='./assets/scripts/TweenMax.min.js'></script>
+    <script type='text/javascript' src='./assets/scripts/modernizr.min.js'></script>
+    <script type='text/javascript' src='./assets/scripts/custom.js'></script>
 </body>
 
 </html>
