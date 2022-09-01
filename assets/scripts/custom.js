@@ -70,19 +70,18 @@ function canvasApp() {
     $(".service").click(function (e) {
         e.preventDefault();
 
-        $(".top-menu").toggleClass("open-top-menu amir")
-        if ($(".top-menu").hasClass("open-top-menu amir")){
-            tl.to(".earth", 2, {scale: .3 , xPercent: 35 , yPercent: -35})
+        $(".top-menu").toggleClass("open-top-menu")
+        if ($(".top-menu").hasClass("open-top-menu")) {
+            tl.to(".earth", 2, { scale: .3, xPercent: 35, yPercent: -35 })
         }
-    else
-        {
-            tl.to(".earth", 2, {scale: 1 , xPercent: 0 , yPercent: 0})
+        else {
+            tl.to(".earth", 2, { scale: 1, xPercent: 0, yPercent: 0 })
         }
     });
 
 
-    TweenMax.from(testobj, 1, {sphereRad: 150} )
-    TweenMax.from(".logo", 1, {opacity: 0 } )
+    TweenMax.from(testobj, 1, { sphereRad: 150 })
+    TweenMax.from(".logo", 1, { opacity: 0 })
     function init() {
         wait = 1;
         count = wait - 1;
